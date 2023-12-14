@@ -1,0 +1,115 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* * Navigation bar styles */ 
+.nav-bar nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: transparent;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    background-color: transparent;
+}
+
+nav li {
+    margin: 0 40px; /* Increase spacing between icons */
+    background-color: transparent;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 15px 20px; /* Adjust padding for better spacing */
+    font-size: 16px; /* Make the text size smaller */
+    color: white;
+    background-color: transparent;
+}
+
+/* Slightly bigger icons initially and lower positioning */
+.nav-bar svg {
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    padding: 5% 5%;
+    transition: all 0.3s ease;
+    margin-top: 10px; /* Lower the icons */
+    background-color: transparent;
+}
+
+/* Enlarge icons on hover */
+.nav-bar svg:hover {
+    color: white;
+    font-size: 2.5em; /* Adjust the size for hover */
+}
+
+.contact-container {
+    max-width: 800px; /* Enlarged the max-width */
+    margin: 200px auto; /* Adjusted the margin */
+    padding: 30px; /* Adjusted the padding */
+    background-color: #fff;
+    border-radius: 12px; /* Enlarged the border-radius */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Enlarged the box-shadow */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-container h2 {
+    text-align: center;
+    color: #e8b8ff;
+    font-size: 30px; /* Enlarged the font size */
+    background-color: transparent;
+}
+
+.contact-container p {
+    text-align: center;
+    background-color: transparent;
+    margin: 20px 0; /* Adjusted the margin */
+    color: #e8b8ff;
+    font-size: 22px; /* Enlarged the font size */
+}
+
+.contact-buttons {
+    margin-top: 30px; /* Adjusted the margin-top */
+    background-color: #fff;
+}
+
+.contact-buttons a {
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.contact-buttons button {
+    background-color: #e8b8ff;
+    color: #fff;
+    padding: 15px 25px; /* Enlarged the padding */
+    margin: 10px; /* Adjusted the margin */
+    border: none;
+    border-radius: 6px; /* Enlarged the border-radius */
+    font-size: 18px; /* Enlarged the font size */
+    cursor: pointer;
+}
+
+.contact-buttons button:hover {
+    background-color: #d19aed;
+}
+
+.gif-image3 {
+    width: 100%; /* Set the width to 100% of the container */
+    height: 100%;
+    position: absolute;
+    top: 0px; /* Adjust the top position as needed */
+    left: 0px; /* Adjust the left position as needed */
+    z-index: -1; /* Set a lower value to send it to the very back */
+}

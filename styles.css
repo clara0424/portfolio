@@ -1,0 +1,213 @@
+/* Reset styling for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    background-color: #cfffb8;
+    font-family: 'Poppins', sans-serif;
+}
+
+.gif-image1 {
+    width: 100%; /* Set the width to 100% of the container */
+    height: 250px;
+    position: absolute;
+    top: 0px; /* Adjust the top position as needed */
+    left: 0px; /* Adjust the left position as needed */
+    z-index: 1; /* Ensure the GIFs appear above the background image */
+}
+
+.gif-image2 {
+    width: 100%; /* Set the width to 100% of the container */
+    height: 270px;
+    position: absolute;
+    top: 500px; /* Adjust the top position as needed */
+    left: 0px; /* Adjust the left position as needed */
+    z-index: 1; /* Ensure the GIFs appear above the background image */
+}
+
+/* Navigation bar styles */
+.nav-bar nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: transparent;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 20px; /* Adjust spacing between icons for larger screens */
+}
+
+nav a {
+    text-decoration: none;
+    padding: 15px 10px; /* Adjust padding for better spacing on larger screens */
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+}
+
+/* Slightly bigger icons initially and lower positioning */
+.nav-bar svg {
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    padding: 5% 5%;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Enlarge icons on hover */
+.nav-bar svg:hover {
+    color: white;
+    font-size: 2.5em;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 100%) {
+    nav ul {
+        flex-direction: column; /* Stack list items vertically on smaller screens */
+        align-items: center; /* Center items when stacked */
+    }
+
+    nav li {
+        margin: 10px 0; /* Adjust spacing for stacked list items */
+    }
+
+    nav a {
+        padding: 10px; /* Adjust padding for better spacing on smaller screens */
+    }
+}
+
+
+/* First page styles */
+.first-page {
+    position: relative;
+    margin-top: 250px; /* Lower the entire content */
+    background-image: url('img/bckimage.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    background-color: transparent;
+}
+
+.first-page .title {
+    font-size: 70px; /* Slightly larger title */
+}
+
+.first-page .subtitle {
+    font-size: 30px; /* Slightly larger subtitle */
+}
+
+/* Video styles */
+video {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 300px auto;
+    margin-top: 700px;
+}
+
+/* Additional styles for the text below the video */
+.video-text-container {
+    position:relative;
+    bottom: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+
+.video-text {
+    font-size: 18px;
+    color: #e8b8ff;
+    margin-bottom: 20px; /* Adjust the distance from the bottom */
+    margin: 0; /* Remove default margin for better styling */
+}
+
+/* Styles for the Write Email section */
+.write-email-section {
+    position: relative;
+    top: 0px;
+    background-color: #fff; /* White background for the container */
+    padding: 30px; /* Add padding for better visual appeal */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.write-email-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.write-email-section h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.write-email-section p {
+    font-size: 24px;
+    color: #666;
+}
+
+.write-email-section button {
+    font-size: 24px;
+    color: #e8b8ff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Styles for the Email Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
